@@ -1,0 +1,6 @@
+.idea
+node_modules
+.DS_Store
+data/aws-config.json
+*.log
+webapp-thing/js/aws_config.js

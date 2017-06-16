@@ -1,0 +1,33 @@
+{
+  "name": "alexa-mqtt-typescript-example",
+  "version": "0.0.1",
+  "description": "A TypeScript example of alexa/iot integration using mqtt.",
+  "main": "lib/index.js",
+  "config": {
+      "watch": "src",
+      "app": "src/index.ts",
+      "lib": "lib/*.*"
+  },
+  "scripts": {
+      "build": "npm run clean; tsc",
+      "clean": "cross-conf-env rimraf npm_package_config_lib",
+      "test": "node testflow.js"
+  },
+  "author": "Andrew Rapo <andrew@worthwhilegames.org> (http://worthwhilegames.org)",
+  "license": "MIT",
+  "dependencies": {
+      "@types/alexa-sdk": "^1.1.0",
+      "@types/node": "^7.0.30",
+      "alexa-sdk": "^1.0.10",
+      "aws-sdk": "^2.67.0"
+  },
+  "devDependencies": {
+      "cross-conf-env": "latest"
+  },
+  "keywords": [
+    "alexa",
+    "typescript",
+    "iot",
+    "mqtt"
+  ]
+}
