@@ -1,3 +1,4 @@
+// Test flow - from https://github.com/alexa/alexa-cookbook (Paul Cutslinger)
 // Test Flow - a multiple intent test script for Alexa Lambda code
 // Launch from a Terminal Prompt.  Examples:
 // node testflow
@@ -25,7 +26,7 @@ var appId = config.appId;  // set this to match your skill's alexa.appId to remo
 var locale = 'en-US';
 
 var fs = require("fs");
-var MyLambdaFunction = require('./lib/index.js'); // Your Lambda source with exports.handler
+var MyLambdaFunction = require('./dist/index.js'); // Your Lambda source with exports.handler
 
 var MyDialog = './dialogs/default.txt';
 

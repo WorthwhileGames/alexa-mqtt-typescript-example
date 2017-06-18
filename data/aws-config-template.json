@@ -2,6 +2,10 @@
     "region": "us-east-1",
     "cogitoIdentityPoolId": "[your cogito identity pool id]",
     "appId": "[your skill's app id]",
-    "alexaDynamoDBTableName": "MarketGuideDynamo",
-    "lambdaFunctionNameForDBAccess": "MarketGuideLambdaDB"
+    "skillLambdaName": "[your skill lambda name]",
+    "alexaDynamoDBTableName": "[your skill's dynamo db table name]",
+    "lambdaFunctionNameForDBAccess": "[name of the lambda function used to test DB access by callLambda.js]",
+    "thingARN": "[your thing's ARN]",
+    "thingEndpoint": "[your thing's HTTPS endpoint]",
+    "thingName": "[your thing's name]"
 }

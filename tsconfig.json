@@ -12,7 +12,13 @@
     },
     "exclude": [
         "node_modules",
-        "lib"
+        "lib",
+        "data",
+        "dialogs",
+        "dist",
+        "docs",
+        "speechAssets",
+        "webapp-thing"
     ],
     "compileOnSave": false
 }

@@ -1,10 +1,12 @@
 const AWS = require('aws-sdk');
-import * as Alexa from 'alexa-sdk';
+const Alexa = require('alexa-sdk');
+
+const config = require('../data/aws-config.json');
 
 const iotConfig: any = {};
-iotConfig.IOT_BROKER_ENDPOINT = "a85qxqlg9bdjq.iot.us-east-1.amazonaws.com";  // also called the REST API endpoint
-iotConfig.IOT_BROKER_REGION = "us-east-1";  // eu-west-1 corresponds to the Ireland Region.  Use us-east-1 for the N. Virginia region
-iotConfig.IOT_THING_NAME = "robot";
+iotConfig.IOT_BROKER_ENDPOINT = config.thingEndpoint;  // also called the REST API endpoint
+iotConfig.IOT_BROKER_REGION = config.region;  // eu-west-1 corresponds to the Ireland Region.  Use us-east-1 for the N. Virginia region
+iotConfig.IOT_THING_NAME = config.thingName;
 
 const stockSymbols = {
     disney: 'DIS',
@@ -37,7 +39,8 @@ class Handler {
         // alexa.resources = languageStrings;
 
         let thiz: Handler = this;
-        let handlers: Alexa.Handlers = {
+        // Alexa.Handlers
+        let handlers: any = {
             'Unhandled': function() {
                 this.emit(':ask', 'Insert your own error message here');
             },
