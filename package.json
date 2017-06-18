@@ -1,38 +1,42 @@
 {
-  "name": "alexa-mqtt-typescript-example",
-  "version": "0.0.1",
-  "description": "A TypeScript example of alexa/iot integration using mqtt.",
-  "main": "lib/index.js",
-  "config": {
-    "watch": "src",
-    "app": "src/index.ts",
-    "lib": "lib/*.*",
-    "dist": "dist/*.*"
-  },
-  "scripts": {
-    "build": "npm run clean; tsc; webpack",
-    "clean": "cross-conf-env rimraf npm_package_config_lib; cross-conf-env rimraf npm_package_config_dist",
-    "test": "node testflow.js"
-  },
-  "author": "Andrew Rapo <andrew@worthwhilegames.org> (http://worthwhilegames.org)",
-  "license": "MIT",
-  "dependencies": {
-    "@types/alexa-sdk": "^1.1.0",
-    "@types/node": "^7.0.30",
-    "alexa-sdk": "^1.0.10",
-    "aws-mqtt": "^0.2.2",
-    "aws-sdk": "^2.67.0"
-  },
-  "devDependencies": {
-    "awesome-typescript-loader": "^3.1.3",
-    "cross-conf-env": "latest",
-    "typescript": "^2.3.4",
-    "webpack": "^2.6.1"
-  },
-  "keywords": [
-    "alexa",
-    "typescript",
-    "iot",
-    "mqtt"
-  ]
+    "name": "alexa-mqtt-typescript-example",
+    "version": "0.0.1",
+    "description": "A TypeScript Alexa Skill Example with IoT Integration Using mqtt.",
+    "main": "lib/index.js",
+    "config": {
+        "watch": "src",
+        "app": "src/index.ts",
+        "lib": "lib/*.*",
+        "dist": "dist/*.*"
+    },
+    "scripts": {
+        "build": "npm run clean; tsc; webpack",
+        "clean": "cross-conf-env rimraf npm_package_config_lib; cross-conf-env rimraf npm_package_config_dist",
+        "test": "node testflow.js"
+    },
+    "author": "Andrew Rapo <andrew@worthwhilegames.org> (http://worthwhilegames.org)",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:WorthwhileGames/alexa-mqtt-typescript-example.git"
+    },
+    "dependencies": {
+        "@types/alexa-sdk": "^1.1.0",
+        "@types/node": "^7.0.30",
+        "alexa-sdk": "^1.0.10",
+        "aws-mqtt": "^0.2.2",
+        "aws-sdk": "^2.67.0"
+    },
+    "devDependencies": {
+        "awesome-typescript-loader": "^3.1.3",
+        "cross-conf-env": "latest",
+        "typescript": "^2.3.4",
+        "webpack": "^2.6.1"
+    },
+    "keywords": [
+        "alexa",
+        "typescript",
+        "iot",
+        "mqtt"
+    ]
 }

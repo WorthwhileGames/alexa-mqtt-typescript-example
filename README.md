@@ -1,4 +1,4 @@
-## A TypeScript Alexa Skill Example
+## A TypeScript Alexa Skill Example with IoT Integration Using mqtt
 
 ### Build and Test
 - `npm install`
