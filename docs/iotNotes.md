@@ -15,3 +15,10 @@ Add IOT Full Access policy to the role used for lambda that uses this IOT api. *
 
 
  *AWS IOT documentation: (https://aws.amazon.com/iot-platform/getting-started/) *
+
+
+ *MQTT subscribing: (https://forums.aws.amazon.com/thread.jspa?threadID=220654, https://forums.aws.amazon.com/message.jspa?messageID=683453) *
+
+ *AWS MQTT: (https://www.npmjs.com/package/aws-mqtt) *
+
+ *AWS Webpack: (http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/webpack.html, https://aws.amazon.com/blogs/developer/using-webpack-and-the-aws-sdk-for-javascript-to-create-and-bundle-an-application-part-1/) *

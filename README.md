@@ -13,11 +13,11 @@
 ### aws-config.json
 - in order to run/test the code:
 - - Copy data/aws-config-template.json and rename it aws-config.json
-- - Edit the appId and cogitoIdentityPoolId fields
+- - Edit the appId and cognitoIdentityPoolId fields
 ```
 {
     "region": "us-east-1",
-    "cogitoIdentityPoolId": "[your cogito identity pool id]",
+    "cognitoIdentityPoolId": "[your cognito identity pool id]",
     "appId": "[your skill's app id]",
     "skillLambdaName": "[your skill lambda name]",
     "alexaDynamoDBTableName": "[your skill's dynamo db table name]",

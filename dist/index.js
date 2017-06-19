@@ -78,7 +78,7 @@ module.exports = require("aws-sdk");
 
 module.exports = {
 	"region": "us-east-1",
-	"cogitoIdentityPoolId": "us-east-1:2c15a7db-7fc4-43e5-be3c-452b9805bd89",
+	"cognitoIdentityPoolId": "us-east-1:2c15a7db-7fc4-43e5-be3c-452b9805bd89",
 	"appId": "amzn1.ask.skill.6adaade3-4b2c-40ae-a8e5-f42f2c6eb026",
 	"skillLambdaName": "MarketGuide",
 	"alexaDynamoDBTableName": "MarketGuideDynamo",

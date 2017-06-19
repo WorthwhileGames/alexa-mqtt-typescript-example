@@ -11,7 +11,7 @@ AWS.config.update({
     region: config.region
 });
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-  IdentityPoolId: config.cogitoIdentityPoolId
+  IdentityPoolId: config.cognitoIdentityPoolId
 });
 
 // Toggle on or off various debugging outputs

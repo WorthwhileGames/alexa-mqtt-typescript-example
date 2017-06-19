@@ -6,7 +6,7 @@ const config = require('./data/aws-config.json');
 
 AWS.config.region = config.region;
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: config.cogitoIdentityPoolId
+    IdentityPoolId: config.cognitoIdentityPoolId
 });
 
 const client = AWSMqtt.connect({
